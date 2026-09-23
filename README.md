@@ -1,6 +1,7 @@
 # CivicAI - Smart Public Issue Resolution
 
-**Hackathon 2026 · Bengaluru Smart City Challenge**
+**Track 1 — AI for Digital Public Infrastructure & Governance**  
+*Hackathon 2026 · Bengaluru Smart City Challenge*
 
 An AI-powered civic platform that connects citizens, field officers, and administrators to report, prioritize, track, and verify resolution of public infrastructure issues in Bengaluru.
 
