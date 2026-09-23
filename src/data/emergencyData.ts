@@ -1,0 +1,215 @@
+import { EmergencyService } from '../types';
+
+export const NATIONAL_EMERGENCIES: EmergencyService[] = [
+  {
+    id: 'em-112',
+    name: 'National Unified Emergency Helpline',
+    category: 'Police',
+    number: '112',
+    altNumber: '100',
+    address: 'Central Emergency Response Support System (ERSS)',
+    distanceKm: 0.8,
+    available: '24x7 Immediate Response',
+    icon: 'Shield',
+  },
+  {
+    id: 'em-108',
+    name: 'Ambulance & Trauma Medical Rescue',
+    category: 'Medical',
+    number: '108',
+    altNumber: '102',
+    address: 'State Emergency Medical Relief Corps',
+    distanceKm: 1.2,
+    available: '24x7 Advanced Life Support',
+    icon: 'HeartPulse',
+  },
+  {
+    id: 'em-101',
+    name: 'Fire & Chemical Disaster Rescue',
+    category: 'Fire',
+    number: '101',
+    altNumber: '080-22971500',
+    address: 'State Fire & Emergency Services Command',
+    distanceKm: 2.1,
+    available: '24x7 Rapid Hazmat & Extrication',
+    icon: 'Flame',
+  },
+  {
+    id: 'em-1533',
+    name: 'BBMP Municipal Disaster Control Room',
+    category: 'Municipal',
+    number: '1533',
+    altNumber: '080-22660000',
+    address: 'Corporation Disaster Management Cell, Bengaluru',
+    distanceKm: 1.5,
+    available: '24x7 Civic Flooding & Road Collapse',
+    icon: 'Building2',
+  },
+  {
+    id: 'em-1916',
+    name: 'BWSSB Water & Toxic Sewerage Hotline',
+    category: 'Water',
+    number: '1916',
+    altNumber: '080-22945100',
+    address: 'Water Supply & Pipeline Rapid Repair Wing',
+    distanceKm: 2.4,
+    available: '24x7 Main Burst & Sewage Overflow',
+    icon: 'Droplets',
+  },
+  {
+    id: 'em-1912',
+    name: 'BESCOM Live Wire & Electric Hazard Hotline',
+    category: 'Electricity',
+    number: '1912',
+    altNumber: '080-22873333',
+    address: 'Electricity Supply Emergency Central Desk',
+    distanceKm: 1.9,
+    available: '24x7 Live Cable & Transformer Fire',
+    icon: 'Zap',
+  },
+  {
+    id: 'em-1091',
+    name: "Women's Emergency Distress Response",
+    category: 'Safety',
+    number: '1091',
+    altNumber: '112',
+    address: 'Metropolitan Women & Child Protection Cell',
+    distanceKm: 1.8,
+    available: '24x7 Rapid Police Intervention',
+    icon: 'ShieldCheck',
+  },
+  {
+    id: 'em-103',
+    name: 'Metropolitan Traffic Emergency Dispatch',
+    category: 'Police',
+    number: '103',
+    altNumber: '080-22943030',
+    address: 'City Traffic Management & Accident Relief HQ',
+    distanceKm: 2.3,
+    available: '24x7 Road Blockage & Towing Clearance',
+    icon: 'AlertTriangle',
+  },
+];
+
+export const getNearbyEmergencyServices = (lat?: number, lng?: number, locationName?: string): EmergencyService[] => {
+  const loc = (locationName || '').toLowerCase();
+  
+  if (loc.includes('electronic city') || (lat && Math.abs(lat - 12.8452) < 0.05)) {
+    return [
+      {
+        id: 'ecity-police',
+        name: 'Electronic City Police Station',
+        category: 'Police',
+        number: '080-28520033',
+        altNumber: '112',
+        address: 'Hosur Road, Near Phase 1 Toll, Electronic City',
+        distanceKm: 0.9,
+        available: '24x7 Patrol & Mobile Hoysala Dispatch',
+        icon: 'Shield',
+      },
+      {
+        id: 'ecity-hospital',
+        name: 'Narayana Health City Multi-Speciality Trauma',
+        category: 'Medical',
+        number: '080-71222222',
+        altNumber: '108',
+        address: '258/A, Bommasandra Industrial Area, E-City',
+        distanceKm: 1.4,
+        available: '24x7 Level-1 Emergency & ICU',
+        icon: 'HeartPulse',
+      },
+      {
+        id: 'ecity-fire',
+        name: 'Electronic City Fire & Rescue Station',
+        category: 'Fire',
+        number: '080-28520101',
+        altNumber: '101',
+        address: 'Phase 1 Industrial Sub-division, Bengaluru',
+        distanceKm: 1.6,
+        available: '24x7 High-Reach Water Tender',
+        icon: 'Flame',
+      },
+      {
+        id: 'ecity-bbmp',
+        name: 'BBMP Zonal Ward 192 Triage Cell',
+        category: 'Municipal',
+        number: '1533',
+        altNumber: '080-22660000',
+        address: 'Begur - Electronic City Zonal Office',
+        distanceKm: 1.1,
+        available: '24x7 Quick Response Team Dispatched',
+        icon: 'Building2',
+      },
+      ...NATIONAL_EMERGENCIES.slice(4),
+    ];
+  }
+
+  if (loc.includes('whitefield') || (lat && Math.abs(lat - 12.9698) < 0.05)) {
+    return [
+      {
+        id: 'wf-police',
+        name: 'Whitefield Police Station',
+        category: 'Police',
+        number: '080-28452093',
+        altNumber: '112',
+        address: 'ITPB Main Road, Whitefield',
+        distanceKm: 0.8,
+        available: '24x7 Hoysala Mobile Patrol',
+        icon: 'Shield',
+      },
+      {
+        id: 'wf-hospital',
+        name: 'Manipal Hospital Whitefield Emergency Care',
+        category: 'Medical',
+        number: '080-25024444',
+        altNumber: '108',
+        address: 'EPIP Zone, Whitefield',
+        distanceKm: 1.3,
+        available: '24x7 Cardiac & Trauma ER',
+        icon: 'HeartPulse',
+      },
+      {
+        id: 'wf-fire',
+        name: 'ITPB Fire & Rescue Sub-station',
+        category: 'Fire',
+        number: '080-28450101',
+        altNumber: '101',
+        address: 'Whitefield Main Corridor',
+        distanceKm: 1.7,
+        available: '24x7 Hazmat & Rescue Team',
+        icon: 'Flame',
+      },
+      ...NATIONAL_EMERGENCIES.slice(3),
+    ];
+  }
+
+  if (loc.includes('koramangala') || (lat && Math.abs(lat - 12.9352) < 0.05)) {
+    return [
+      {
+        id: 'kora-police',
+        name: 'Koramangala Police Station',
+        category: 'Police',
+        number: '080-22943477',
+        altNumber: '112',
+        address: '80 Feet Road, 6th Block, Koramangala',
+        distanceKm: 0.7,
+        available: '24x7 Active Precinct Desk',
+        icon: 'Shield',
+      },
+      {
+        id: 'kora-hospital',
+        name: "St. John's Medical College & Emergency Hospital",
+        category: 'Medical',
+        number: '080-22065000',
+        altNumber: '108',
+        address: 'Sarjapur Main Road, Koramangala',
+        distanceKm: 1.1,
+        available: '24x7 Tertiary Emergency Care',
+        icon: 'HeartPulse',
+      },
+      ...NATIONAL_EMERGENCIES.slice(2),
+    ];
+  }
+
+  return NATIONAL_EMERGENCIES;
+};
