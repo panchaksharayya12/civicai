@@ -8,7 +8,7 @@ An AI-powered civic platform that connects citizens, field officers, and adminis
 
 ## Live Demo
 
-**[civicai-panchaksharayya12.vercel.app](https://civicai-panchaksharayya12.vercel.app)**
+**[civicai-neon.vercel.app](https://civicai-neon.vercel.app)**
 
 ---
 
