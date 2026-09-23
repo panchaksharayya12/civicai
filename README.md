@@ -1,18 +1,18 @@
-# 🏙️ CivicAI — Smart Public Issue Resolution
+# CivicAI - Smart Public Issue Resolution
 
-> **Hackathon 2026 · Bengaluru Smart City Challenge**
+**Hackathon 2026 · Bengaluru Smart City Challenge**
 
 An AI-powered civic platform that connects citizens, field officers, and administrators to report, prioritize, track, and verify resolution of public infrastructure issues in Bengaluru.
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-**[🚀 civicai-panchaksharayya12.vercel.app](https://civicai-panchaksharayya12.vercel.app)**
+**[civicai-panchaksharayya12.vercel.app](https://civicai-panchaksharayya12.vercel.app)**
 
 ---
 
-## 👥 Team
+## Team
 
 | Member | Role |
 |--------|------|
@@ -21,20 +21,20 @@ An AI-powered civic platform that connects citizens, field officers, and adminis
 
 ---
 
-## ✨ Features
+## Features
 
-- 📸 **AI Defect Scanner** — Visor-HUD interface with real-time image analysis & severity detection
-- 📍 **Smart Location Picker** — 35+ Bengaluru areas with zone filters, GPS auto-locate, autocomplete
-- 🎯 **Priority Engine** — Weighted scoring: severity × duplicates × location × public impact
-- 📊 **Admin Dashboard** — Complaints Queue + Interactive Leaflet Map with separate sections
-- 🔐 **Role-Based Auth** — Citizen, Field Officer, Admin portals
-- 📸 **Before/After Proof** — Side-by-side comparison, clearance quality score, citizen confirmation
-- 🤖 **CivicBot AI** — In-app assistant for complaints and navigation
-- 🎬 **Guided Demo Mode** — Auto-advancing walkthrough for presentations
+- **AI Defect Scanner** - Visor-HUD interface with real-time image analysis and severity detection
+- **Smart Location Picker** - 35+ Bengaluru areas with zone filters, GPS auto-locate, autocomplete
+- **Priority Engine** - Weighted scoring: severity x duplicates x location x public impact
+- **Admin Dashboard** - Complaints Queue + Interactive Leaflet Map with separate sections
+- **Role-Based Auth** - Citizen, Field Officer, Admin portals
+- **Before/After Proof** - Side-by-side comparison, clearance quality score, citizen confirmation
+- **CivicBot AI** - In-app assistant for complaints and navigation
+- **Guided Demo Mode** - Auto-advancing walkthrough for presentations
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 |-------|-------------|
@@ -46,7 +46,7 @@ An AI-powered civic platform that connects citizens, field officers, and adminis
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repo
@@ -64,46 +64,46 @@ App runs at `http://localhost:5173`
 
 ---
 
-## 📊 Demo Scenarios
+## Demo Scenarios
 
 | Issue | Location | Severity | Resolution Time |
 |-------|----------|----------|-----------------|
-| 🕳️ Pothole | Koramangala 4th Block | CRITICAL | 2.1 days |
-| 🗑️ Garbage Pile | Whitefield Main Road | HIGH | 1.4 days |
-| 💡 Street Light | Indiranagar 100ft Rd | MEDIUM | 3.8 days |
-| 🌊 Waterlogging | Silk Board Junction | CRITICAL | 4.2 days |
+| Pothole | Koramangala 4th Block | CRITICAL | 2.1 days |
+| Garbage Pile | Whitefield Main Road | HIGH | 1.4 days |
+| Street Light | Indiranagar 100ft Rd | MEDIUM | 3.8 days |
+| Waterlogging | Silk Board Junction | CRITICAL | 4.2 days |
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 civicai/
 ├── src/
-│   ├── components/          # React components
-│   │   ├── CitizenHome.tsx  # Main citizen portal
+│   ├── components/           # React components
+│   │   ├── CitizenHome.tsx   # Main citizen portal
 │   │   ├── AdminDashboard.tsx # Admin control centre
-│   │   ├── LiveTracking.tsx # Issue tracking & before/after
-│   │   ├── CivicBot.tsx     # AI chatbot
+│   │   ├── LiveTracking.tsx  # Issue tracking & before/after
+│   │   ├── CivicBot.tsx      # AI chatbot
 │   │   └── ...
 │   ├── context/
-│   │   └── CivicContext.tsx # Global state management
+│   │   └── CivicContext.tsx  # Global state management
 │   ├── data/
-│   │   └── mockData.ts      # Bengaluru locations & sample data
-│   └── types.ts             # TypeScript interfaces
-├── public/images/           # Before/After civic defect photos
-├── backend/                 # FastAPI Python backend
+│   │   └── mockData.ts       # Bengaluru locations & sample data
+│   └── types.ts              # TypeScript interfaces
+├── public/images/            # Before/After civic defect photos
+├── backend/                  # FastAPI Python backend
 └── CivicAI_Hackathon_Presentation.pptx  # 12-slide pitch deck
 ```
 
 ---
 
-## 📄 Presentation
+## Presentation
 
-The 12-slide hackathon pitch deck is included in the repo: [`CivicAI_Hackathon_Presentation.pptx`](./CivicAI_Hackathon_Presentation.pptx)
+The 12-slide hackathon pitch deck is included in the repo: [CivicAI_Hackathon_Presentation.pptx](./CivicAI_Hackathon_Presentation.pptx)
 
 ---
 
-## 📜 License
+## License
 
-MIT © 2026 Panchaksharayya & Rashmi
+MIT (c) 2026 Panchaksharayya & Rashmi
